@@ -1,5 +1,6 @@
 import React from "react";
 import home1 from "../img/home1.png";
+import me from "../img/pic (2).PNG";
 import { About, Description, Image, Hide } from "../styles";
 //Animation
 import { motion } from "framer-motion";
@@ -26,10 +27,10 @@ const AboutSection = () => {
         <motion.p variants={fade}>
           Contact me to get in touch about any job opportunities.
         </motion.p>
-        <motion.button variants={fade}>Contact Me</motion.button>
+        {/* <motion.button variants={fade}>Contact Me</motion.button> */}
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
+        <motion.img variants={photoAnim} src={me} alt="guy with a camera" />
       </Image>
       <Wave />
     </About>

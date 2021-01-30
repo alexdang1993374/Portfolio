@@ -3,7 +3,7 @@ import React from "react";
 import GlobalStyle from "./components/GlobalStyle";
 //Import Pages
 import AboutMe from "./pages/AboutMe";
-import ContactMe from "./pages/ContactMe";
+//import ContactMe from "./pages/ContactMe";
 import MyWork from "./pages/MyWork";
 import Nav from "./components/Nav";
 import ProjectDetail from "./pages/ProjectDetail";
@@ -32,9 +32,9 @@ function App() {
           <Route path="/work/:id">
             <ProjectDetail />
           </Route>
-          <Route path="/contact">
+          {/* <Route path="/contact">
             <ContactMe />
-          </Route>
+          </Route> */}
         </Switch>
       </AnimatePresence>
     </div>
