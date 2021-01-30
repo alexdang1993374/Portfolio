@@ -12,13 +12,13 @@ const Nav = () => {
       </h1>
       <ul>
         <li>
-          <Link to="/">1. About Me</Link>
+          <Link to="/">About Me</Link>
         </li>
         <li>
-          <Link to="/work">2. My Work</Link>
+          <Link to="/work">My Work</Link>
         </li>
         <li>
-          <Link to="/contact">3. Contact Me</Link>
+          <Link to="/contact">Contact Me</Link>
         </li>
       </ul>
     </StyledNav>
@@ -33,6 +33,9 @@ const StyledNav = styled.nav`
   align-items: center;
   padding: 1rem 10rem;
   background: #282828;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   a {
     color: white;
     text-decoration: none;
