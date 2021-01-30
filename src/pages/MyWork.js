@@ -15,10 +15,14 @@ import {
   slider,
   sliderContainer,
 } from "../animation";
+import { useScroll } from "../components/useScroll";
 
 const MyWork = () => {
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
   return (
     <Work
+      layout="position"
       variants={pageAnimation}
       initial="hidden"
       animate="show"
@@ -40,16 +44,26 @@ const MyWork = () => {
           </Hide>
         </Link>
       </Project>
-      <Project>
+      <Project
+        ref={element}
+        variants={fade}
+        animate={controls}
+        initial="hidden"
+      >
         <h2>Revive</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/revive">
           <img src={theracer} alt="Revive" />
         </Link>
       </Project>
-      <Project>
+      <Project
+        ref={element2}
+        variants={fade}
+        animate={controls2}
+        initial="hidden"
+      >
         <h2>Movie Night</h2>
-        <div className="line"></div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/movie-night">
           <img src={goodtimes} alt="Movie Night" />
         </Link>
@@ -67,7 +81,7 @@ const Work = styled(motion.div)`
   }
 `;
 
-const Project = styled.div`
+const Project = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
@@ -89,9 +103,9 @@ const Hide = styled.div`
 const Frame1 = styled(motion.div)`
   position: fixed;
   left: 0;
-  top: 10%;
+  top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: #fffebf;
   z-index: 2;
 `;

@@ -8,7 +8,7 @@ export const pageAnimation = {
     y: 0,
     transition: {
       duration: 0.5,
-      when: "beforeChildren",
+      //when: "beforeChildren",
       staggerChildren: 0.25,
     },
   },
@@ -68,7 +68,7 @@ export const lineAnim = {
   show: {
     width: "100%",
     transition: {
-      duration: 1,
+      duration: 1.5,
     },
   },
 };
@@ -114,6 +114,22 @@ export const scrollReveal = {
     scale: 1,
     transition: {
       duration: 0.5,
+    },
+  },
+};
+
+export const swoop = {
+  hidden: {
+    width: "0%",
+    transition: {
+      duration: 1,
+    },
+  },
+  show: {
+    width: "100%",
+    transition: {
+      ease: "easeOut",
+      duration: 1,
     },
   },
 };
