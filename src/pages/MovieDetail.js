@@ -1,49 +1,48 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
-import { ProjectState } from "../projectState";
+import { MovieState } from "../movieState";
 //Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animation";
 
-const ProjectDetail = () => {
+const MovieDetail = () => {
   const history = useHistory();
   const url = history.location.pathname;
-  const [projects, setProjects] = useState(ProjectState);
-  const [project, setProject] = useState(null);
+  const [movies, setMovies] = useState(MovieState);
+  const [movie, setMovie] = useState(null);
 
-  //useEffect
+  //UseEffect
   useEffect(() => {
-    const currentProject = projects.filter(
-      (stateProject) => stateProject.url === url
-    );
-    setProject(currentProject[0]);
-  }, [projects, url]);
+    const currentMovie = movies.filter((stateMovie) => stateMovie.url === url);
+    setMovie(currentMovie[0]);
+    console.log(setMovies);
+  }, [movies, url]);
 
   return (
     <>
-      {project && (
+      {movie && (
         <Details
+          exit="exit"
           variants={pageAnimation}
           initial="hidden"
           animate="show"
-          exit="exit"
         >
           <HeadLine>
-            <h2>{project.title}</h2>
-            <img src={project.mainImg} alt={project.title} />
+            <h2>{movie.title}</h2>
+            <img src={movie.mainImg} alt="movie" />
           </HeadLine>
-          <Information>
-            {project.info.map((data) => (
-              <Info
-                title={data.title}
-                description={data.description}
-                key={data.title}
+          <Awards>
+            {movie.awards.map((award) => (
+              <Award
+                title={award.title}
+                description={award.description}
+                key={award.title}
               />
             ))}
-          </Information>
+          </Awards>
           <ImageDisplay>
-            <img src={project.secondaryImg} alt={project.title} />
+            <img src={movie.secondaryImg} alt="movie" />
           </ImageDisplay>
         </Details>
       )}
@@ -54,7 +53,6 @@ const ProjectDetail = () => {
 const Details = styled(motion.div)`
   color: white;
 `;
-
 const HeadLine = styled.div`
   min-height: 90vh;
   padding-top: 20vh;
@@ -71,8 +69,7 @@ const HeadLine = styled.div`
     object-fit: cover;
   }
 `;
-
-const Information = styled.div`
+const Awards = styled.div`
   min-height: 80vh;
   display: flex;
   margin: 5rem 10rem;
@@ -83,8 +80,7 @@ const Information = styled.div`
     margin: 2rem 2rem;
   }
 `;
-
-const InfoStyle = styled.div`
+const AwardStyle = styled.div`
   padding: 5rem;
   h3 {
     font-size: 2rem;
@@ -99,7 +95,6 @@ const InfoStyle = styled.div`
     padding: 2rem 0rem;
   }
 `;
-
 const ImageDisplay = styled.div`
   min-height: 50vh;
   img {
@@ -109,15 +104,15 @@ const ImageDisplay = styled.div`
   }
 `;
 
-//Info Component
-const Info = ({ title, description }) => {
+//Award Component
+const Award = ({ title, description }) => {
   return (
-    <InfoStyle>
+    <AwardStyle>
       <h3>{title}</h3>
       <div className="line"></div>
       <p>{description}</p>
-    </InfoStyle>
+    </AwardStyle>
   );
 };
 
-export default ProjectDetail;
+export default MovieDetail;

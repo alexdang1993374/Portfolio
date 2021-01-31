@@ -23,8 +23,9 @@ const FaqSection = () => {
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
-              similique.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi
+              autem accusamus ex laboriosam porro, adipisci quam voluptatum
+              magnam placeat corporis.
             </p>
           </div>
         </Toggle>
@@ -32,26 +33,26 @@ const FaqSection = () => {
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
-              similique.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error,
+              totam.
             </p>
           </div>
         </Toggle>
-        <Toggle title="Different Payment methods">
+        <Toggle title="Diferrent Payment Methods">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
-              similique.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, neque.
             </p>
           </div>
         </Toggle>
-        <Toggle title="what products do you have?">
+        <Toggle title="What Products do you offer.">
           <div className="answer">
             <p>Lorem ipsum dolor sit amet.</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem,
-              similique.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, neque.
             </p>
           </div>
         </Toggle>

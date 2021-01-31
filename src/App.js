@@ -2,12 +2,11 @@ import React from "react";
 //Global Style
 import GlobalStyle from "./components/GlobalStyle";
 //Import Pages
-import AboutMe from "./pages/AboutMe";
-//import ContactMe from "./pages/ContactMe";
-import MyWork from "./pages/MyWork";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import OurWork from "./pages/OurWork";
 import Nav from "./components/Nav";
-import ProjectDetail from "./pages/ProjectDetail";
-import ScrollTop from "./components/ScrollTop";
+import MovieDetail from "./pages/MovieDetail";
 //Router
 import { Switch, Route, useLocation } from "react-router-dom";
 //Animation
@@ -19,22 +18,22 @@ function App() {
   return (
     <div className="App">
       <GlobalStyle />
-      <ScrollTop />
+
       <Nav />
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact>
-            <AboutMe />
+            <AboutUs />
           </Route>
           <Route path="/work" exact>
-            <MyWork />
+            <OurWork />
           </Route>
           <Route path="/work/:id">
-            <ProjectDetail />
+            <MovieDetail />
           </Route>
-          {/* <Route path="/contact">
-            <ContactMe />
-          </Route> */}
+          <Route path="/contact">
+            <ContactUs />
+          </Route>
         </Switch>
       </AnimatePresence>
     </div>

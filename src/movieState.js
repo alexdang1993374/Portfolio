@@ -5,17 +5,15 @@ import theracer from "./img/theracer-small.png";
 import athlete2 from "./img/athlete2.png";
 import goodtimes2 from "./img/good-times2.jpg";
 import theracer2 from "./img/the-racer2.jpg";
-import mizu from "./img/mizu.JPG";
-import mizu2 from "./img/mizu2.PNG";
 
-export const ProjectState = () => {
+export const MovieState = () => {
   return [
     {
-      title: "Seba",
+      title: "The Athlete",
       mainImg: athlete,
       secondaryImg: athlete2,
-      url: "/work/seba",
-      info: [
+      url: "/work/the-athlete",
+      awards: [
         {
           title: "Truly A masterpiece",
           description:
@@ -34,34 +32,11 @@ export const ProjectState = () => {
       ],
     },
     {
-      title: "Revive",
-      mainImg: theracer,
-      url: "/work/revive",
-      secondaryImg: theracer2,
-      info: [
-        {
-          title: "Truly A masterpiece",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "Fresh look on a brutal sport.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "It’s okay lmao.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-      ],
-    },
-    {
-      title: "Movie Night",
+      title: "Good Times",
       mainImg: goodtimes,
-      url: "/work/movie-night",
+      url: "/work/good-times",
       secondaryImg: goodtimes2,
-      info: [
+      awards: [
         {
           title: "Truly A masterpiece",
           description:
@@ -80,11 +55,11 @@ export const ProjectState = () => {
       ],
     },
     {
-      title: "MyMizualise",
-      mainImg: mizu,
-      url: "/work/mymizualise",
-      secondaryImg: mizu2,
-      info: [
+      title: "The Racer",
+      mainImg: theracer,
+      url: "/work/the-racer",
+      secondaryImg: theracer2,
+      awards: [
         {
           title: "Truly A masterpiece",
           description:

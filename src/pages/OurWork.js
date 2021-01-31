@@ -2,34 +2,32 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
-import seba from "../img/seba.PNG";
-import revive from "../img/revive.PNG";
-import movie from "../img/Movienight1.png";
-import mizu from "../img/mizu.JPG";
+import athlete from "../img/athlete-small.png";
+import theracer from "../img/theracer-small.png";
+import goodtimes from "../img/goodtimes-small.png";
 //Animations
 import { motion } from "framer-motion";
 import {
+  sliderContainer,
+  slider,
   pageAnimation,
   fade,
   photoAnim,
   lineAnim,
-  slider,
-  sliderContainer,
 } from "../animation";
 import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
 
-const MyWork = () => {
+const OurWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
-  const [element3, controls3] = useScroll();
   return (
     <Work
-      layout="position"
+      style={{ background: "#fff" }}
+      exit="exit"
       variants={pageAnimation}
       initial="hidden"
       animate="show"
-      exit="exit"
-      style={{ background: "#fff" }}
     >
       <motion.div variants={sliderContainer}>
         <Frame1 variants={slider}></Frame1>
@@ -37,51 +35,37 @@ const MyWork = () => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
-      <Project>
-        <motion.h2 variants={fade}>Seba</motion.h2>
+      <Movie>
+        <motion.h2 variants={fade}>The Athlete</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/seba">
+        <Link to="/work/the-athlete">
           <Hide>
-            <motion.img variants={photoAnim} src={seba} alt="Seba" />
+            <motion.img variants={photoAnim} src={athlete} alt="athlete" />
           </Hide>
         </Link>
-      </Project>
-      <Project
-        ref={element}
-        variants={fade}
-        animate={controls}
-        initial="hidden"
-      >
-        <h2>Revive</h2>
+      </Movie>
+
+      <Movie ref={element} variants={fade} animate={controls} initial="hidden">
+        <h2>The Racer</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/revive">
-          <img src={revive} alt="Revive" />
+        <Link to="/work/the-racer">
+          <img src={theracer} alt="theracer" />
         </Link>
-      </Project>
-      <Project
+      </Movie>
+
+      <Movie
         ref={element2}
         variants={fade}
         animate={controls2}
         initial="hidden"
       >
-        <h2>Movie Night</h2>
+        <h2>Good Times</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/movie-night">
-          <img src={movie} alt="Movie Night" />
+        <Link to="/work/good-times">
+          <img src={goodtimes} alt="goodtimes" />
         </Link>
-      </Project>
-      <Project
-        ref={element3}
-        variants={fade}
-        animate={controls3}
-        initial="hidden"
-      >
-        <h2>MyMizualise</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <Link to="/work/mymizualise">
-          <img src={mizu} alt="MyMizualise" />
-        </Link>
-      </Project>
+      </Movie>
+      <ScrollTop />
     </Work>
   );
 };
@@ -93,13 +77,14 @@ const Work = styled(motion.div)`
   @media (max-width: 1300px) {
     padding: 2rem 2rem;
   }
+
   h2 {
     padding: 1rem 0rem;
   }
 `;
-
-const Project = styled(motion.div)`
+const Movie = styled(motion.div)`
   padding-bottom: 10rem;
+
   .line {
     height: 0.5rem;
     background: #23d997;
@@ -111,7 +96,6 @@ const Project = styled(motion.div)`
     object-fit: cover;
   }
 `;
-
 const Hide = styled.div`
   overflow: hidden;
 `;
@@ -120,23 +104,20 @@ const Hide = styled.div`
 const Frame1 = styled(motion.div)`
   position: fixed;
   left: 0;
-  top: 0;
+  top: 10%;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #fffebf;
   z-index: 2;
 `;
-
 const Frame2 = styled(Frame1)`
   background: #ff8efb;
 `;
-
 const Frame3 = styled(Frame1)`
   background: #8ed2ff;
 `;
-
 const Frame4 = styled(Frame1)`
   background: #8effa0;
 `;
 
-export default MyWork;
+export default OurWork;
