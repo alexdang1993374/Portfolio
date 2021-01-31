@@ -13,20 +13,22 @@ const AboutSection = () => {
       <Description>
         <motion.div>
           <Hide>
-            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
+            <motion.h2 variants={titleAnim}>
+              Full Stack Software Engineer
+            </motion.h2>
           </Hide>
-          <Hide>
+          {/* <Hide>
             <motion.h2 variants={titleAnim}>
               your <span>dreams</span> come
             </motion.h2>
           </Hide>
           <Hide>
             <motion.h2 variants={titleAnim}>true.</motion.h2>
-          </Hide>
+          </Hide> */}
         </motion.div>
-        <motion.p variants={fade}>
+        {/* <motion.p variants={fade}>
           Contact me to get in touch about any job opportunities.
-        </motion.p>
+        </motion.p> */}
         {/* <motion.button variants={fade}>Contact Me</motion.button> */}
       </Description>
       <Image>

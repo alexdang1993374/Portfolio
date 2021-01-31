@@ -2,9 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
+import seba from "../img/seba.PNG";
+import revive from "../img/revive.PNG";
+import movie from "../img/Movienight1.png";
+import mizu from "../img/mizu.JPG";
 //Animations
 import { motion } from "framer-motion";
 import {
@@ -20,6 +21,7 @@ import { useScroll } from "../components/useScroll";
 const MyWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
   return (
     <Work
       layout="position"
@@ -40,7 +42,7 @@ const MyWork = () => {
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/seba">
           <Hide>
-            <motion.img variants={photoAnim} src={athlete} alt="Seba" />
+            <motion.img variants={photoAnim} src={seba} alt="Seba" />
           </Hide>
         </Link>
       </Project>
@@ -53,7 +55,7 @@ const MyWork = () => {
         <h2>Revive</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/revive">
-          <img src={theracer} alt="Revive" />
+          <img src={revive} alt="Revive" />
         </Link>
       </Project>
       <Project
@@ -65,7 +67,19 @@ const MyWork = () => {
         <h2>Movie Night</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/movie-night">
-          <img src={goodtimes} alt="Movie Night" />
+          <img src={movie} alt="Movie Night" />
+        </Link>
+      </Project>
+      <Project
+        ref={element3}
+        variants={fade}
+        animate={controls3}
+        initial="hidden"
+      >
+        <h2>MyMizualise</h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Link to="/work/mymizualise">
+          <img src={mizu} alt="MyMizualise" />
         </Link>
       </Project>
     </Work>
