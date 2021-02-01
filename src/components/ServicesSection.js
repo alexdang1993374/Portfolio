@@ -66,7 +66,7 @@ const ServicesSection = () => {
         </Cards>
       </Description>
       <Image>
-        <img style={{ borderRadius: "50%" }} alt="camera" src={me} />
+        <img style={{ borderRadius: "5%" }} alt="camera" src={me} />
       </Image>
     </Services>
   );

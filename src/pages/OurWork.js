@@ -97,6 +97,11 @@ const Movie = styled(motion.div)`
     height: 70vh;
     object-fit: cover;
   }
+  @media (max-width: 1300px) {
+    img {
+      height: 25vh;
+    }
+  }
 `;
 const Hide = styled.div`
   overflow: hidden;
