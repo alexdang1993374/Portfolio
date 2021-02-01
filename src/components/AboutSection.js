@@ -28,7 +28,7 @@ const AboutSection = () => {
             </Hide>
           </motion.div>
           <motion.p variants={fade}>
-            I have an immence passion for design thinking, video games, and
+            I have an immense passion for design thinking, video games, and
             creating fun, intuitive user experiences.
           </motion.p>
           <Link to="/contact">
