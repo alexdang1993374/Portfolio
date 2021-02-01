@@ -35,8 +35,12 @@ const MovieDetail = () => {
           <Awards>
             {movie.awards.map((award) => (
               <Award
-                title={award.title}
                 description={award.description}
+                info={award.info}
+                info2={award.info2}
+                info3={award.info3}
+                website={award.website}
+                git={award.git}
                 key={award.title}
               />
             ))}
@@ -81,12 +85,12 @@ const Awards = styled.div`
   }
 `;
 const AwardStyle = styled.div`
-  padding: 5rem;
+  padding: 3rem;
   h3 {
     font-size: 2rem;
   }
   .line {
-    width: 50%;
+    width: 100%;
     background: #23d997;
     height: 0.5rem;
     margin: 1rem 0rem;
@@ -105,12 +109,31 @@ const ImageDisplay = styled.div`
 `;
 
 //Award Component
-const Award = ({ title, description }) => {
+const Award = ({ description, info, info2, info3, website, git }) => {
+  const openWebsite = () => {
+    window.open(`${website}`);
+  };
+  const openGit = () => {
+    window.open(`${git}`);
+  };
+
   return (
     <AwardStyle>
-      <h3>{title}</h3>
+      <h3>About</h3>
       <div className="line"></div>
       <p>{description}</p>
+      <p>{info}</p>
+      <p>{info2}</p>
+      <p>{info3}</p>
+      <div className="line"></div>
+      {website && (
+        <p style={{ cursor: "pointer" }} onClick={openWebsite}>
+          Go to Website
+        </p>
+      )}
+      <p style={{ cursor: "pointer" }} onClick={openGit}>
+        Github Repository
+      </p>
     </AwardStyle>
   );
 };

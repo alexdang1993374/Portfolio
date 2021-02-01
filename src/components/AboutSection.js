@@ -1,5 +1,5 @@
 import React from "react";
-import home1 from "../img/home1.png";
+
 import { About, Description, Image, Hide } from "../styles";
 import { Link } from "react-router-dom";
 //Framer Motion

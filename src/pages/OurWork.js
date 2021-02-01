@@ -5,9 +5,6 @@ import { Link } from "react-router-dom";
 import seba from "../img/seba.PNG";
 import revive from "../img/revive.PNG";
 import movieNight from "../img/Movienight1.png";
-import athlete from "../img/athlete-small.png";
-import theracer from "../img/theracer-small.png";
-import goodtimes from "../img/goodtimes-small.png";
 //Animations
 import { motion } from "framer-motion";
 import {
@@ -24,16 +21,6 @@ import ScrollTop from "../components/ScrollTop";
 const OurWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
-
-  const openSeba = () => {
-    window.open("https://seba-45e88.web.app/");
-  };
-  const openRevive = () => {
-    window.open("https://revive-games.herokuapp.com/");
-  };
-  const openMN = () => {
-    window.open("https://github.com/MovieNightCC/MovieNight");
-  };
 
   return (
     <Work
@@ -59,22 +46,15 @@ const OurWork = () => {
         </Link>
       </Movie>
 
-      <Movie
-        onClick={openRevive}
-        ref={element}
-        variants={fade}
-        animate={controls}
-        initial="hidden"
-      >
+      <Movie ref={element} variants={fade} animate={controls} initial="hidden">
         <h2>Revive</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        {/* <Link to="/work/revive"> */}
-        <img src={revive} alt="Revive" />
-        {/* </Link> */}
+        <Link to="/work/revive">
+          <img src={revive} alt="Revive" />
+        </Link>
       </Movie>
 
       <Movie
-        onClick={openMN}
         ref={element2}
         variants={fade}
         animate={controls2}
@@ -82,9 +62,9 @@ const OurWork = () => {
       >
         <h2>Movie Night</h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        {/* <Link to="/work/good-times"> */}
-        <img src={movieNight} alt="Movie Night" />
-        {/* </Link> */}
+        <Link to="/work/movie-night">
+          <img src={movieNight} alt="Movie Night" />
+        </Link>
       </Movie>
       <ScrollTop />
     </Work>
