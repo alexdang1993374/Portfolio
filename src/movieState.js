@@ -5,6 +5,14 @@ import revive from "./img/revive.PNG";
 import revive2 from "./img/revive2.PNG";
 import movie from "./img/Movienight1.png";
 import movie2 from "./img/movie2.png";
+import mizu from "./img/mizu.JPG";
+import mizu2 from "./img/mizu2.PNG";
+import fitness from "./img/fitness.PNG";
+import fitness2 from "./img/tracker2.PNG";
+import talk from "./img/talkybox.JPG";
+import talk2 from "./img/talk2.PNG";
+import ges from "./img/ges (3).JPG";
+import ges2 from "./img/ges (2).JPG";
 
 export const MovieState = () => {
   return [
@@ -35,7 +43,7 @@ export const MovieState = () => {
       awards: [
         {
           description:
-            "Movie Night is a Movie-swiping app to bring users a seamless and painless Movie Night Experience.",
+            "A mobile app where couples can swipe movies to help choose what to watch for a night in.",
           info:
             "• Developed the front-end card swiping, movie filtering, and various other features as well as designed UI/UX components using Flutter and Dart in a 3 week team project of 4 members.",
           info2:
@@ -62,6 +70,84 @@ export const MovieState = () => {
           info3: "•  Deployed app to Heroku using CI/CD methodologies.",
           website: "https://revive-games.herokuapp.com/",
           git: "https://github.com/alexdang1993374/Revive",
+        },
+      ],
+    },
+    {
+      title: "MyMizualise",
+      mainImg: mizu,
+      url: "/work/mymizualise",
+      secondaryImg: mizu2,
+      awards: [
+        {
+          description:
+            "A web application for mymizu (a free water refill app) users to visualize the community's positive environmental impact in a fun and contextual way.",
+          info:
+            "• Utilized ReactJS and Google Maps API to construct a dynamic multi-page front-end.",
+          info2:
+            "•   Designed and implemented a PostgreSQL database using Knex and Express.",
+          info3:
+            "•  Configured front-end asynchronous Axios requests to mymizu's third party API.",
+          website: "https://mymizualise.herokuapp.com/",
+          git: "https://github.com/JulienTromas/MyMizualise",
+        },
+      ],
+    },
+    {
+      title: "Fitness Tracker",
+      mainImg: fitness,
+      url: "/work/fitness",
+      secondaryImg: fitness2,
+      awards: [
+        {
+          description:
+            "Fitness Tracker is a full-stack web application where users can keep track of their exercise habits.",
+          info:
+            "•   Architectured and created a RESTful API server using Golang connected to a PostgreSQL database and connected it to the client using asynchronous Axios requests.",
+          info2:
+            "•    Created and designed a multi-page front-end wep app using ReactJS.",
+          info3:
+            "•  Features full CRUD functionality where users can retrieve, edit, delete, and add to their logged exercises.",
+          git: "https://github.com/alexdang1993374/FitnessTracker",
+        },
+      ],
+    },
+    {
+      title: "Talkybox",
+      mainImg: talk,
+      url: "/work/talkybox",
+      secondaryImg: talk2,
+      awards: [
+        {
+          description:
+            "A full-stack web application for a nostalgic look back at timeless quotes from iconic television series.",
+          info:
+            "• Architectured and created a RESTful API server using Golang connected to a PostgreSQL database and connected it to the client using asynchronous Axios requests.",
+          info2:
+            "•    Built and designed a multi-page front-end wep app using ReactJS.",
+          info3:
+            "•   Deployed and maintained app using Heroku Pipelines following CI/CD practices.",
+          website: "https://talkybox.herokuapp.com/",
+          git: "https://github.com/alexdang1993374/Talkybox",
+        },
+      ],
+    },
+    {
+      title: "Geschur",
+      mainImg: ges,
+      url: "/work/geschur",
+      secondaryImg: ges2,
+      awards: [
+        {
+          description:
+            "A web application using machine learning to liven up video calls through gesture recognition.",
+          info:
+            "•  Used TeachableMachine and TensorFlowJS to create, train, and detect body gestures and match them with a specific action.",
+          info2:
+            "•    Constructed a single page front end client using ML5JS, P5JS, HTML5, and Flexbox CSS.",
+          info3: "•    Continuously integrated and deployed app to Heroku.",
+          website: "https://geschur.herokuapp.com/",
+          git: "https://github.com/alexdang1993374/Geschur",
         },
       ],
     },

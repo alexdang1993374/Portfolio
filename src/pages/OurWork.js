@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 import seba from "../img/seba.PNG";
 import revive from "../img/revive.PNG";
 import movieNight from "../img/Movienight1.png";
+import mizu from "../img/mizu.JPG";
+import fitness from "../img/fitness.PNG";
+import talk from "../img/talkybox.JPG";
+import ges from "../img/ges (2).JPG";
 //Animations
 import { motion } from "framer-motion";
 import {
@@ -21,6 +25,10 @@ import ScrollTop from "../components/ScrollTop";
 const OurWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
+  const [element3, controls3] = useScroll();
+  const [element4, controls4] = useScroll();
+  const [element5, controls5] = useScroll();
+  const [element6, controls6] = useScroll();
 
   return (
     <Work
@@ -38,8 +46,8 @@ const OurWork = () => {
       </motion.div>
       <Movie>
         <motion.h2 variants={fade}>Seba</motion.h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/seba">
+          <motion.div variants={lineAnim} className="line"></motion.div>
           <Hide>
             <motion.img variants={photoAnim} src={seba} alt="Seba" />
           </Hide>
@@ -48,12 +56,11 @@ const OurWork = () => {
 
       <Movie ref={element} variants={fade} animate={controls} initial="hidden">
         <h2>Revive</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/revive">
+          <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={revive} alt="Revive" />
         </Link>
       </Movie>
-
       <Movie
         ref={element2}
         variants={fade}
@@ -61,9 +68,57 @@ const OurWork = () => {
         initial="hidden"
       >
         <h2>Movie Night</h2>
-        <motion.div variants={lineAnim} className="line"></motion.div>
         <Link to="/work/movie-night">
+          <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={movieNight} alt="Movie Night" />
+        </Link>
+      </Movie>
+      <Movie
+        ref={element3}
+        variants={fade}
+        animate={controls3}
+        initial="hidden"
+      >
+        <h2>MyMizualise</h2>
+        <Link to="/work/mymizualise">
+          <motion.div variants={lineAnim} className="line"></motion.div>
+          <img src={mizu} alt="MyMizualise" />
+        </Link>
+      </Movie>
+      <Movie
+        ref={element4}
+        variants={fade}
+        animate={controls4}
+        initial="hidden"
+      >
+        <h2>Fitness Tracker</h2>
+        <Link to="/work/fitness">
+          <motion.div variants={lineAnim} className="line"></motion.div>
+          <img src={fitness} alt="Fitness Tracker" />
+        </Link>
+      </Movie>
+      <Movie
+        ref={element5}
+        variants={fade}
+        animate={controls5}
+        initial="hidden"
+      >
+        <h2>Talkybox</h2>
+        <Link to="/work/talkybox">
+          <motion.div variants={lineAnim} className="line"></motion.div>
+          <img src={talk} alt="Talkybox" />
+        </Link>
+      </Movie>
+      <Movie
+        ref={element6}
+        variants={fade}
+        animate={controls6}
+        initial="hidden"
+      >
+        <h2>Gechur</h2>
+        <Link to="/work/geschur">
+          <motion.div variants={lineAnim} className="line"></motion.div>
+          <img src={ges} alt="Gechur" />
         </Link>
       </Movie>
       <ScrollTop />
@@ -84,7 +139,6 @@ const Work = styled(motion.div)`
   }
 `;
 const Movie = styled(motion.div)`
-  cursor: pointer;
   padding-bottom: 10rem;
 
   .line {
@@ -93,6 +147,7 @@ const Movie = styled(motion.div)`
     margin-bottom: 3rem;
   }
   img {
+    //cursor: pointer;
     width: 100%;
     height: 70vh;
     object-fit: cover;
