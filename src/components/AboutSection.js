@@ -11,30 +11,34 @@ const AboutSection = () => {
   return (
     <About>
       <Description>
-        <motion.div>
-          <Hide>
-            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
-          </Hide>
-          <Hide>
-            <motion.h2 variants={titleAnim}>
-              your <span>dreams</span> come
-            </motion.h2>
-          </Hide>
-          <Hide>
-            <motion.h2 variants={titleAnim}>true.</motion.h2>
-          </Hide>
-        </motion.div>
-        <motion.p variants={fade}>
-          Contact us for any photography or videography ideas that you have. We
-          have professionals with amazing skills.
-        </motion.p>
-        <Link to="/contact">
-          <motion.button variants={fade}>Contact Us</motion.button>
-        </Link>
+        <div style={{ textAlign: "center" }}>
+          <motion.div>
+            <Hide>
+              <motion.h2 variants={titleAnim}>
+                Hello, my name is Alex Dang.
+              </motion.h2>
+            </Hide>
+            <Hide>
+              <motion.h2 variants={titleAnim}>
+                I'm a <span>Full-Stack</span>
+              </motion.h2>
+            </Hide>
+            <Hide>
+              <motion.h2 variants={titleAnim}>Software Engineer.</motion.h2>
+            </Hide>
+          </motion.div>
+          <motion.p variants={fade}>
+            I have an immence passion for design thinking, video games, and
+            creating fun, intuitive user experiences.
+          </motion.p>
+          <Link to="/contact">
+            <motion.button variants={fade}>Contact Me</motion.button>
+          </Link>
+        </div>
       </Description>
-      <Image>
+      {/* <Image>
         <motion.img variants={photoAnim} src={home1} alt="guy with a camera" />
-      </Image>
+      </Image> */}
       <Wave />
     </About>
   );

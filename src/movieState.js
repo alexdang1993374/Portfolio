@@ -1,4 +1,6 @@
 //Import Images
+import seba from "./img/seba.PNG";
+import seba2 from "./img/seba2.PNG";
 import athlete from "./img/athlete-small.png";
 import goodtimes from "./img/goodtimes-small.png";
 import theracer from "./img/theracer-small.png";
@@ -9,23 +11,18 @@ import theracer2 from "./img/the-racer2.jpg";
 export const MovieState = () => {
   return [
     {
-      title: "The Athlete",
-      mainImg: athlete,
-      secondaryImg: athlete2,
-      url: "/work/the-athlete",
+      title: "Seba",
+      mainImg: seba,
+      secondaryImg: seba2,
+      url: "/work/seba",
       awards: [
         {
-          title: "Truly A masterpiece",
+          title: "Website",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "It’s okay lmao.",
+          title: "Github",
           description:
             "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
         },
@@ -38,26 +35,24 @@ export const MovieState = () => {
       secondaryImg: goodtimes2,
       awards: [
         {
-          title: "Truly A masterpiece",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          title: "A Tribute",
+          description: "Seba is my tribute to Nujabes.",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Fully Functional",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "Users can listen to a library of some of my favorite Nujabes songs with more on the way.",
         },
         {
-          title: "It’s okay lmao.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+          title: "Tech",
+          description: "Seba was made using ReactJS.",
         },
       ],
     },
     {
-      title: "The Racer",
+      title: "Revive",
       mainImg: theracer,
-      url: "/work/the-racer",
+      url: "/work/revive",
       secondaryImg: theracer2,
       awards: [
         {

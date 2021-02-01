@@ -4,7 +4,8 @@ import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import money from "../img/money.svg";
 import teamwork from "../img/teamwork.svg";
-import home2 from "../img/home2.png";
+import me from "../img/pic (2).PNG";
+import pencil from "../img/pencil.svg";
 //Styles
 import { About, Description, Image } from "../styles";
 import styled from "styled-components";
@@ -22,7 +23,7 @@ const ServicesSection = () => {
     >
       <Description>
         <h2>
-          High <span>quality</span> services
+          What I can do for <span>you</span>
         </h2>
         <Cards>
           <Card>
@@ -30,33 +31,42 @@ const ServicesSection = () => {
               <img alt="icon" src={clock} />
               <h3>Efficient</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>I focus on writing clean, elegant, and efficient code.</p>
           </Card>
           <Card>
             <div className="icon">
               <img alt="icon" src={teamwork} />
               <h3>Teamwork</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              I have more than 6 years of experience working in diverse
+              international teams.
+            </p>
           </Card>
           <Card>
             <div className="icon">
               <img alt="icon" src={diaphragm} />
-              <h3>Diaphragm</h3>
+              <h3>Skilled</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              JavaScript, TypeScript, React, NodeJS, Golang, Flutter, Dart,
+              Express, REST API, Knex, PostgreSQL
+            </p>
           </Card>
           <Card>
             <div className="icon">
-              <img alt="icon" src={money} />
-              <h3>Affordable</h3>
+              <img alt="icon" src={pencil} />
+              <h3>Experienced</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Redux, Vue, Python, GraphQL, TensorFlowJS, ML5JS, P5JS, Mocha,
+              Chai, Heroku, Firebase
+            </p>
           </Card>
         </Cards>
       </Description>
       <Image>
-        <img alt="camera" src={home2} />
+        <img style={{ borderRadius: "50%" }} alt="camera" src={me} />
       </Image>
     </Services>
   );
