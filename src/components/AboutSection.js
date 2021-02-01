@@ -1,10 +1,10 @@
 import React from "react";
 
-import { About, Description, Image, Hide } from "../styles";
+import { About, Description, Hide } from "../styles";
 import { Link } from "react-router-dom";
 //Framer Motion
 import { motion } from "framer-motion";
-import { titleAnim, fade, photoAnim } from "../animation";
+import { titleAnim, fade } from "../animation";
 import Wave from "./Wave";
 
 const AboutSection = () => {
