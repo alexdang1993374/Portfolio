@@ -5,6 +5,13 @@ import { pageAnimation, titleAnim } from "../animation";
 import styled from "styled-components";
 
 const ContactUs = () => {
+  const openLinkedIn = () => {
+    window.open("https://www.linkedin.com/in/alexdang1993374/");
+  };
+  const openGit = () => {
+    window.open("https://github.com/alexdang1993374");
+  };
+
   return (
     <ContactStyle
       exit="exit"
@@ -22,19 +29,23 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send Us A Message</h2>
+            <h2>alexdang1993374@gmail.com</h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Send an email.</h2>
+            <h2 onClick={openLinkedIn} style={{ cursor: "pointer" }}>
+              LinkedIn: alexdang1993374
+            </h2>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
             <Circle />
-            <h2>Social Media</h2>
+            <h2 onClick={openGit} style={{ cursor: "pointer" }}>
+              Github: alexdang1993374
+            </h2>
           </Social>
         </Hide>
       </div>
