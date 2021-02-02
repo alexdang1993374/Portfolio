@@ -20,6 +20,7 @@ html{
           }
     @media (max-width: 1700px){
         font-size: 75%;
+        overflow-x: hidden;
     }
     
 }

@@ -32,7 +32,7 @@ const ContactUs = () => {
         <Hide>
           <Social variants={titleAnim}>
             <img src={email} alt="email icon" />
-            <h2>alexdang1993374@gmail.com</h2>
+            <h2 className="email">alexdang1993374@gmail.com</h2>
           </Social>
         </Hide>
         <Hide>
@@ -80,6 +80,14 @@ const Social = styled(motion.div)`
   align-items: center;
   h2 {
     margin: 2rem;
+  }
+  @media (max-width: 1300px) {
+    h2 {
+      font-size: 2.5rem;
+    }
+    .email {
+      font-size: 1.5rem;
+    }
   }
 `;
 

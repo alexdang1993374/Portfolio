@@ -65,7 +65,12 @@ const ServicesSection = () => {
         </Cards>
       </Description>
       <Image>
-        <img style={{ borderRadius: "5%" }} alt="camera" src={me} />
+        <img
+          className="mePic"
+          style={{ borderRadius: "5%" }}
+          alt="camera"
+          src={me}
+        />
       </Image>
     </Services>
   );
@@ -78,6 +83,11 @@ const Services = styled(About)`
   p {
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
+  }
+  @media (max-width: 1300px) {
+    .mePic {
+      height: 25rem;
+    }
   }
 `;
 const Cards = styled.div`

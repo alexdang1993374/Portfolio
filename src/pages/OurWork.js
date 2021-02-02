@@ -45,8 +45,8 @@ const OurWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
       <Movie>
-        <motion.h2 variants={fade}>Seba</motion.h2>
         <Link to="/work/seba">
+          <motion.h2 variants={fade}>Seba - ReactJS, Firebase</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <Hide>
             <motion.img variants={photoAnim} src={seba} alt="Seba" />
@@ -55,8 +55,8 @@ const OurWork = () => {
       </Movie>
 
       <Movie ref={element} variants={fade} animate={controls} initial="hidden">
-        <h2>Revive</h2>
         <Link to="/work/revive">
+          <h2>Revive - ReactJS, Redux, Framer Motion, Heroku</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={revive} alt="Revive" />
         </Link>
@@ -67,8 +67,8 @@ const OurWork = () => {
         animate={controls2}
         initial="hidden"
       >
-        <h2>Movie Night</h2>
         <Link to="/work/movie-night">
+          <h2>Movie Night - Flutter, Dart, TypeScript, Firebase</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={movieNight} alt="Movie Night" />
         </Link>
@@ -79,8 +79,8 @@ const OurWork = () => {
         animate={controls3}
         initial="hidden"
       >
-        <h2>MyMizualise</h2>
         <Link to="/work/mymizualise">
+          <h2>MyMizualise - ReactJS, PostgreSQL, Express, Knex</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={mizu} alt="MyMizualise" />
         </Link>
@@ -91,8 +91,8 @@ const OurWork = () => {
         animate={controls4}
         initial="hidden"
       >
-        <h2>Fitness Tracker</h2>
         <Link to="/work/fitness">
+          <h2>Fitness Tracker - ReactJS, Golang, PostgreSQL</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={fitness} alt="Fitness Tracker" />
         </Link>
@@ -103,8 +103,8 @@ const OurWork = () => {
         animate={controls5}
         initial="hidden"
       >
-        <h2>Talkybox</h2>
         <Link to="/work/talkybox">
+          <h2>Talkybox - ReactJS, Golang, PostgreSQL, Heroku</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={talk} alt="Talkybox" />
         </Link>
@@ -115,8 +115,8 @@ const OurWork = () => {
         animate={controls6}
         initial="hidden"
       >
-        <h2>Gechur</h2>
         <Link to="/work/geschur">
+          <h2>Gechur - TeachableMachine, TensorFlowJS, P5JS</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={ges} alt="Gechur" />
         </Link>
@@ -132,6 +132,11 @@ const Work = styled(motion.div)`
   padding: 5rem 10rem;
   @media (max-width: 1300px) {
     padding: 2rem 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
   }
 
   h2 {

@@ -73,6 +73,7 @@ const HeadLine = styled.div`
     object-fit: cover;
   }
   @media (max-width: 1300px) {
+    white-space: nowrap;
     img {
       height: 50vh;
     }
