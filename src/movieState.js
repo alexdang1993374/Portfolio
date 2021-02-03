@@ -13,6 +13,8 @@ import talk from "./img/talkybox.JPG";
 import talk2 from "./img/talk2.PNG";
 import ges from "./img/ges (3).JPG";
 import ges2 from "./img/ges (2).JPG";
+import spots from "./img/spots.JPG";
+import spots2 from "./img/spots2.PNG";
 
 export const MovieState = () => {
   return [
@@ -109,6 +111,26 @@ export const MovieState = () => {
           info3:
             "•  Features full CRUD functionality where users can retrieve, edit, delete, and add to their logged exercises.",
           git: "https://github.com/alexdang1993374/FitnessTracker",
+        },
+      ],
+    },
+    {
+      title: "Spots",
+      mainImg: spots,
+      url: "/work/spots",
+      secondaryImg: spots2,
+      awards: [
+        {
+          description:
+            "A web application mapping out rest stop routes along highways in the United States.",
+          info:
+            "• Utilized ReactJS to construct a dynamic single-page front-end.",
+          info2:
+            "•   Designed and implemented a PostgreSQL database using Knex and Express.",
+          info3:
+            "•  Configured front-end asynchronous Axios requests to Google Maps third party API.",
+          website: "https://truckzstaging.herokuapp.com/",
+          git: "https://github.com/alexdang1993374/Spots",
         },
       ],
     },

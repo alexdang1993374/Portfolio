@@ -9,6 +9,7 @@ import mizu from "../img/mizu.JPG";
 import fitness from "../img/fitness.PNG";
 import talk from "../img/talkybox.JPG";
 import ges from "../img/ges (2).JPG";
+import spots from "../img/spots.JPG";
 //Animations
 import { motion } from "framer-motion";
 import {
@@ -29,6 +30,7 @@ const OurWork = () => {
   const [element4, controls4] = useScroll();
   const [element5, controls5] = useScroll();
   const [element6, controls6] = useScroll();
+  const [element7, controls7] = useScroll();
 
   return (
     <Work
@@ -95,6 +97,18 @@ const OurWork = () => {
           <h2>Fitness Tracker - ReactJS, Golang, PostgreSQL</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={fitness} alt="Fitness Tracker" />
+        </Link>
+      </Movie>
+      <Movie
+        ref={element7}
+        variants={fade}
+        animate={controls7}
+        initial="hidden"
+      >
+        <Link to="/work/spots">
+          <h2>Spots - ReactJS, PostgreSQL, Express, Knex</h2>
+          <motion.div variants={lineAnim} className="line"></motion.div>
+          <img src={spots} alt="spots" />
         </Link>
       </Movie>
       <Movie
