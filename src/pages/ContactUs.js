@@ -81,7 +81,7 @@ const Social = styled(motion.div)`
   h2 {
     margin: 2rem;
   }
-  @media (max-width: 1300px) {
+  @media (max-width: 500px) {
     h2 {
       font-size: 2.5rem;
     }

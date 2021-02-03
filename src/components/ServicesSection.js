@@ -86,6 +86,27 @@ const Services = styled(About)`
   }
   @media (max-width: 1300px) {
     .mePic {
+      height: 90rem;
+      width: 70%;
+    }
+  }
+  @media (max-width: 900px) {
+    .mePic {
+      height: 70rem;
+    }
+  }
+  @media (max-width: 600px) {
+    .mePic {
+      height: 60rem;
+    }
+  }
+  @media (max-width: 500px) {
+    .mePic {
+      height: 40rem;
+    }
+  }
+  @media (max-width: 400px) {
+    .mePic {
       height: 25rem;
     }
   }

@@ -28,8 +28,8 @@ const AboutSection = () => {
             </Hide>
           </motion.div>
           <motion.p variants={fade}>
-            I have an immense passion for design thinking, video games, and
-            creating fun, intuitive user experiences.
+            I have an immense passion for design thinking and creating fun,
+            intuitive user experiences.
           </motion.p>
           <Link to="/contact">
             <motion.button variants={fade}>Contact Me</motion.button>

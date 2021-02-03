@@ -138,11 +138,14 @@ const Award = ({ description, info, info2, info3, website, git }) => {
       <p>{info3}</p>
       <div className="line"></div>
       {website && (
-        <p style={{ cursor: "pointer" }} onClick={openWebsite}>
-          Go to Website
+        <p
+          style={{ cursor: "pointer", fontWeight: "bold" }}
+          onClick={openWebsite}
+        >
+          Go to the Website
         </p>
       )}
-      <p style={{ cursor: "pointer" }} onClick={openGit}>
+      <p style={{ cursor: "pointer", fontWeight: "bold" }} onClick={openGit}>
         Github Repository
       </p>
     </AwardStyle>
