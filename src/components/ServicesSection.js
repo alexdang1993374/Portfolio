@@ -58,8 +58,8 @@ const ServicesSection = () => {
               <h3>Experienced</h3>
             </div>
             <p>
-              Redux, Vue, Python, GraphQL, TensorFlowJS, ML5JS, P5JS, Mocha,
-              Chai, Heroku, Firebase
+              Redux, Elixir, Phoenix, Vue, Python, GraphQL, TensorFlowJS, ML5JS,
+              P5JS, Mocha, Chai, Docker, Heroku, Firebase
             </p>
           </Card>
         </Cards>
