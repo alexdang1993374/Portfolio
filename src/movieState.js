@@ -15,6 +15,8 @@ import ges from "./img/ges (3).JPG";
 import ges2 from "./img/ges (2).JPG";
 import spots from "./img/spots.JPG";
 import spots2 from "./img/spots2.PNG";
+import oauth from "./img/oauth.PNG";
+import oauth2 from "./img/oauth2.PNG";
 
 export const MovieState = () => {
   return [
@@ -111,6 +113,25 @@ export const MovieState = () => {
           info3:
             "•  Features full CRUD functionality where users can retrieve, edit, delete, and add to their logged exercises.",
           git: "https://github.com/alexdang1993374/FitnessTracker",
+        },
+      ],
+    },
+    {
+      title: "Elixir OAuth Demo",
+      mainImg: oauth,
+      url: "/work/oauth",
+      secondaryImg: oauth2,
+      awards: [
+        {
+          description:
+            "A demo showcasing Open Authentication login functionality using Elixir and Phoenix framework.",
+          info:
+            "•   Architectured and created a RESTful API server using Phoenix connected to a PostgreSQL database initialized using Docker.",
+          info2:
+            "•    Implemented sign in capabilities using email or Google account.",
+          info3:
+            "•  Uses hash generators to securely encrypt and store user passwords.",
+          git: "https://github.com/alexdang1993374/Elixir-OAuth-Demo",
         },
       ],
     },

@@ -10,6 +10,7 @@ import fitness from "../img/fitness.PNG";
 import talk from "../img/talkybox.JPG";
 import ges from "../img/ges (2).JPG";
 import spots from "../img/spots.JPG";
+import oauth from "../img/oauth.PNG";
 //Animations
 import { motion } from "framer-motion";
 import {
@@ -31,6 +32,7 @@ const OurWork = () => {
   const [element5, controls5] = useScroll();
   const [element6, controls6] = useScroll();
   const [element7, controls7] = useScroll();
+  const [element8, controls8] = useScroll();
 
   return (
     <Work
@@ -85,6 +87,18 @@ const OurWork = () => {
           <h2>MyMizualise - ReactJS, PostgreSQL, Express, Knex</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={mizu} alt="MyMizualise" />
+        </Link>
+      </Movie>
+      <Movie
+        ref={element8}
+        variants={fade}
+        animate={controls8}
+        initial="hidden"
+      >
+        <Link to="/work/oauth">
+          <h2>OAuth Demo - Elixir, Phoenix, Docker, PostgreSQL</h2>
+          <motion.div variants={lineAnim} className="line"></motion.div>
+          <img src={oauth} alt="OAuth Demo" />
         </Link>
       </Movie>
       <Movie
