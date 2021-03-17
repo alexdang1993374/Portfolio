@@ -48,7 +48,7 @@ const ServicesSection = () => {
               <h3>Skilled</h3>
             </div>
             <p>
-              JavaScript, TypeScript, React, NodeJS, Golang, Flutter, Dart,
+              JavaScript, TypeScript, React, NodeJS, Elixir, Phoenix, Golang, Flutter, Dart,
               Express, REST API, Knex, PostgreSQL
             </p>
           </Card>
@@ -58,7 +58,7 @@ const ServicesSection = () => {
               <h3>Experienced</h3>
             </div>
             <p>
-              Redux, Elixir, Phoenix, Vue, Python, GraphQL, TensorFlowJS, ML5JS,
+              Redux, Vue, Python, GraphQL, TensorFlowJS, ML5JS,
               P5JS, Mocha, Chai, Docker, Heroku, Firebase
             </p>
           </Card>
