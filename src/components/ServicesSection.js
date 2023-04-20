@@ -38,7 +38,7 @@ const ServicesSection = () => {
               <h3>Teamwork</h3>
             </div>
             <p>
-              I have more than 6 years of experience working in diverse
+              I have more than 10 years of experience working in diverse
               international teams.
             </p>
           </Card>
@@ -48,8 +48,9 @@ const ServicesSection = () => {
               <h3>Skilled</h3>
             </div>
             <p>
-              JavaScript, TypeScript, React, NodeJS, Elixir, Phoenix, Golang, Flutter, Dart,
-              Express, REST API, Knex, PostgreSQL
+              TypeScript, JavaScript, ReactJS, NextJS, NodeJS, Redux, Elixir,
+              Phoenix, Golang, Flutter, Dart, Express, REST API, Knex,
+              PostgreSQL
             </p>
           </Card>
           <Card>
@@ -58,8 +59,8 @@ const ServicesSection = () => {
               <h3>Experienced</h3>
             </div>
             <p>
-              Redux, Vue, Python, GraphQL, TensorFlowJS, ML5JS,
-              P5JS, Mocha, Chai, Docker, Heroku, Firebase
+              Vue, Python, GraphQL, TensorFlowJS, ML5JS, P5JS, Mocha, Chai,
+              Docker, Heroku, Firebase
             </p>
           </Card>
         </Cards>

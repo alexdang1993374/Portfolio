@@ -29,8 +29,7 @@ export const MovieState = () => {
         {
           description:
             "Seba is my tribute to the late and great Nujabes. Users can listen to a library of some of my favorite Nujabes songs with more on the way.",
-          info:
-            "• Created a music player with fully featured play, pause, skip, and back functionality.",
+          info: "• Created a music player with fully featured play, pause, skip, and back functionality.",
           info2: "• Designed a dynamically animated Front-End in React.",
           info3:
             "• Deployed and maintained app using Firebase following CI/CD practices.",
@@ -48,8 +47,7 @@ export const MovieState = () => {
         {
           description:
             "A mobile app where couples can swipe movies to help choose what to watch for a night in.",
-          info:
-            "• Developed the front-end card swiping, movie filtering, and various other features as well as designed UI/UX components using Flutter and Dart in a 3 week team project of 4 members.",
+          info: "• Developed the front-end card swiping, movie filtering, and various other features as well as designed UI/UX components using Flutter and Dart in a 3 week team project of 4 members.",
           info2:
             "• Engineered back-end cloud functions using TypeScript to incorporate Firebase functionality.",
           info3:
@@ -67,12 +65,11 @@ export const MovieState = () => {
         {
           description:
             "A web application where users can get information about the latest and hottest videogames.",
-          info:
-            "• Engineered a multipage Front-End with dynamic animations in React, Redux, and Framer Motion.",
+          info: "• Engineered a multipage Front-End with dynamic animations in React, Redux, and Framer Motion.",
           info2:
             "•  Incorporated asynchronous front-end requests to rawg.io API.",
           info3: "•  Deployed app to Heroku using CI/CD methodologies.",
-          website: "https://revive-games.herokuapp.com/",
+          // website: "https://revive-games.herokuapp.com/",
           git: "https://github.com/alexdang1993374/Revive",
         },
       ],
@@ -86,8 +83,7 @@ export const MovieState = () => {
         {
           description:
             "A web application for mymizu (a free water refill app) users to visualize the community's positive environmental impact in a fun and contextual way.",
-          info:
-            "• Utilized ReactJS and Google Maps API to construct a dynamic multi-page front-end.",
+          info: "• Utilized ReactJS and Google Maps API to construct a dynamic multi-page front-end.",
           info2:
             "•   Designed and implemented a PostgreSQL database using Knex and Express.",
           info3:
@@ -106,8 +102,7 @@ export const MovieState = () => {
         {
           description:
             "Fitness Tracker is a full-stack web application where users can keep track of their exercise habits.",
-          info:
-            "•   Architectured and created a RESTful API server using Golang connected to a PostgreSQL database and connected it to the client using asynchronous Axios requests.",
+          info: "•   Architectured and created a RESTful API server using Golang connected to a PostgreSQL database and connected it to the client using asynchronous Axios requests.",
           info2:
             "•    Created and designed a multi-page front-end wep app using ReactJS.",
           info3:
@@ -125,8 +120,7 @@ export const MovieState = () => {
         {
           description:
             "A demo showcasing Open Authentication login functionality using Elixir and Phoenix framework.",
-          info:
-            "•   Architectured and created a RESTful API server using Phoenix connected to a PostgreSQL database initialized using Docker.",
+          info: "•   Architectured and created a RESTful API server using Phoenix connected to a PostgreSQL database initialized using Docker.",
           info2:
             "•    Implemented sign in capabilities using email or Google account.",
           info3:
@@ -144,8 +138,7 @@ export const MovieState = () => {
         {
           description:
             "A web application mapping out rest stop routes along highways in the United States.",
-          info:
-            "• Utilized ReactJS to construct a dynamic single-page front-end.",
+          info: "• Utilized ReactJS to construct a dynamic single-page front-end.",
           info2:
             "•   Designed and implemented a PostgreSQL database using Knex and Express.",
           info3:
@@ -164,8 +157,7 @@ export const MovieState = () => {
         {
           description:
             "A full-stack web application for a nostalgic look back at timeless quotes from iconic television series.",
-          info:
-            "• Architectured and created a RESTful API server using Golang connected to a PostgreSQL database and connected it to the client using asynchronous Axios requests.",
+          info: "• Architectured and created a RESTful API server using Golang connected to a PostgreSQL database and connected it to the client using asynchronous Axios requests.",
           info2:
             "•    Built and designed a multi-page front-end wep app using ReactJS.",
           info3:
@@ -184,8 +176,7 @@ export const MovieState = () => {
         {
           description:
             "A web application using machine learning to liven up video calls through gesture recognition.",
-          info:
-            "•  Used TeachableMachine and TensorFlowJS to create, train, and detect body gestures and match them with a specific action.",
+          info: "•  Used TeachableMachine and TensorFlowJS to create, train, and detect body gestures and match them with a specific action.",
           info2:
             "•    Constructed a single page front end client using ML5JS, P5JS, HTML5, and Flexbox CSS.",
           info3: "•    Continuously integrated and deployed app to Heroku.",
