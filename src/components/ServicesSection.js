@@ -3,7 +3,7 @@ import React from "react";
 import clock from "../img/clock.svg";
 import diaphragm from "../img/diaphragm.svg";
 import teamwork from "../img/teamwork.svg";
-import me from "../img/pic (2).PNG";
+import me from "../img/profilePic.png";
 import pencil from "../img/pencil.svg";
 //Styles
 import { About, Description, Image } from "../styles";
