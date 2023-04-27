@@ -91,15 +91,15 @@ const OurWork = () => {
         </Link>
       </Movie>
 
-      <Movie ref={element} variants={fade} animate={controls} initial="hidden">
+      {/* <Movie ref={element} variants={fade} animate={controls} initial="hidden">
         <Link to="/work/revive">
           <h2>Revive - ReactJS, Redux, Framer Motion, Heroku</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={revive} alt="Revive" />
         </Link>
-      </Movie>
+      </Movie> */}
 
-      <Movie
+      {/* <Movie
         ref={element2}
         variants={fade}
         animate={controls2}
@@ -110,8 +110,9 @@ const OurWork = () => {
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={movieNight} alt="Movie Night" />
         </Link>
-      </Movie>
-      <Movie
+      </Movie> */}
+
+      {/* <Movie
         ref={element3}
         variants={fade}
         animate={controls3}
@@ -122,8 +123,9 @@ const OurWork = () => {
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={mizu} alt="MyMizualise" />
         </Link>
-      </Movie>
-      <Movie
+      </Movie> */}
+
+      {/* <Movie
         ref={element8}
         variants={fade}
         animate={controls8}
@@ -134,8 +136,9 @@ const OurWork = () => {
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={oauth} alt="OAuth Demo" />
         </Link>
-      </Movie>
-      <Movie
+      </Movie> */}
+
+      {/* <Movie
         ref={element4}
         variants={fade}
         animate={controls4}
@@ -146,8 +149,9 @@ const OurWork = () => {
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={fitness} alt="Fitness Tracker" />
         </Link>
-      </Movie>
-      <Movie
+      </Movie> */}
+
+      {/* <Movie
         ref={element7}
         variants={fade}
         animate={controls7}
@@ -158,8 +162,9 @@ const OurWork = () => {
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={spots} alt="spots" />
         </Link>
-      </Movie>
-      <Movie
+      </Movie> */}
+
+      {/* <Movie
         ref={element5}
         variants={fade}
         animate={controls5}
@@ -170,8 +175,9 @@ const OurWork = () => {
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={talk} alt="Talkybox" />
         </Link>
-      </Movie>
-      <Movie
+      </Movie> */}
+
+      {/* <Movie
         ref={element6}
         variants={fade}
         animate={controls6}
@@ -182,7 +188,8 @@ const OurWork = () => {
           <motion.div variants={lineAnim} className="line"></motion.div>
           <img src={ges} alt="Gechur" />
         </Link>
-      </Movie>
+      </Movie> */}
+
       <ScrollTop />
     </Work>
   );
