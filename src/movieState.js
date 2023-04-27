@@ -30,8 +30,8 @@ export const MovieState = () => {
       awards: [
         {
           description:
-            "Introducing Seba, a heartfelt homage to the legendary Nujabes, where you can immerse yourself in a curated collection of our favorite soul-stirring tunes. Stay tuned as we continually expand this sonic journey, paying tribute to the timeless beats of a true musical genius.",
-          info: "• Enjoy a top-notch music experience with our versatile player, complete with play, pause, skip, and back controls for seamless listening.",
+            "Introducing Seba, a heartfelt homage to the legendary Nujabes, where you can immerse yourself in a curated collection of my favorite soul-stirring tunes. Stay tuned as I continually expand this sonic journey, paying tribute to the timeless beats of a true musical genius.",
+          info: "• Enjoy a top-notch music experience with a versatile player, complete with play, pause, skip, and back controls for seamless listening.",
           info2:
             "• Dive into a visually stunning interface, crafted with dynamic animations using cutting-edge React technology.",
           info3:
@@ -49,8 +49,8 @@ export const MovieState = () => {
       awards: [
         {
           description:
-            "Experience the magic of Mother Nature at Wiiizy, your one-stop online shop for premium cannabis products. Elevate your senses and soar high with our carefully curated selection, all just a click away!",
-          info: "• Experience seamless shopping with our fully-integrated Stripe API for smooth transactions.",
+            "Experience the magic of Mother Nature at Wiiizy, your one-stop online shop for premium cannabis products. Elevate your senses and soar high with a carefully curated selection, all just a click away!",
+          info: "• Experience seamless shopping with a fully-integrated Stripe API for smooth transactions.",
           info2:
             "• Powered by the robust and scalable MongoDB for optimal performance.",
           info3:
