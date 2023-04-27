@@ -1,6 +1,8 @@
 //Import Images
 import seba from "./img/seba.PNG";
 import seba2 from "./img/seba2.PNG";
+import wiiizy from "./img/wiiizy2.png";
+import wiiizy2 from "./img/wiiizy3.png";
 import revive from "./img/revive.PNG";
 import revive2 from "./img/revive2.PNG";
 import movie from "./img/Movienight1.png";
@@ -28,13 +30,33 @@ export const MovieState = () => {
       awards: [
         {
           description:
-            "Seba is my tribute to the late and great Nujabes. Users can listen to a library of some of my favorite Nujabes songs with more on the way.",
-          info: "• Created a music player with fully featured play, pause, skip, and back functionality.",
-          info2: "• Designed a dynamically animated Front-End in React.",
+            "Introducing Seba, a heartfelt homage to the legendary Nujabes, where you can immerse yourself in a curated collection of our favorite soul-stirring tunes. Stay tuned as we continually expand this sonic journey, paying tribute to the timeless beats of a true musical genius.",
+          info: "• Enjoy a top-notch music experience with our versatile player, complete with play, pause, skip, and back controls for seamless listening.",
+          info2:
+            "• Dive into a visually stunning interface, crafted with dynamic animations using cutting-edge React technology.",
           info3:
-            "• Deployed and maintained app using Firebase following CI/CD practices.",
+            "• Experience uninterrupted access to your favorite tunes, thanks to expert deployment and maintenance via Firebase, while adhering to best CI/CD practices.",
           website: "https://seba-45e88.web.app/",
           git: "https://github.com/alexdang1993374/Seba",
+        },
+      ],
+    },
+    {
+      title: "Wiiizy",
+      mainImg: wiiizy,
+      secondaryImg: wiiizy2,
+      url: "/work/wiiizy",
+      awards: [
+        {
+          description:
+            "Experience the magic of Mother Nature at Wiiizy, your one-stop online shop for premium cannabis products. Elevate your senses and soar high with our carefully curated selection, all just a click away!",
+          info: "• Experience seamless shopping with our fully-integrated Stripe API for smooth transactions.",
+          info2:
+            "• Powered by the robust and scalable MongoDB for optimal performance.",
+          info3:
+            "• Expertly deployed and maintained on Vercel, ensuring continuous integration and delivery for an unbeatable user experience.",
+          website: "https://wiiizy.vercel.app/",
+          git: "https://github.com/alexdang1993374/Wiiizy",
         },
       ],
     },

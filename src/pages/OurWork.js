@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 //Images
 import seba from "../img/seba.PNG";
+import wiiizy from "../img/wiiizy.png";
 import revive from "../img/revive.PNG";
 import movieNight from "../img/Movienight1.png";
 import mizu from "../img/mizu.JPG";
@@ -23,6 +24,7 @@ import {
 } from "../animation";
 import { useScroll } from "../components/useScroll";
 import ScrollTop from "../components/ScrollTop";
+import GoToWebsite from "../components/GoToWebsite";
 
 const OurWork = () => {
   const [element, controls] = useScroll();
@@ -33,6 +35,7 @@ const OurWork = () => {
   const [element6, controls6] = useScroll();
   const [element7, controls7] = useScroll();
   const [element8, controls8] = useScroll();
+  const [element9, controls9] = useScroll();
 
   return (
     <Work
@@ -48,13 +51,43 @@ const OurWork = () => {
         <Frame3 variants={slider}></Frame3>
         <Frame4 variants={slider}></Frame4>
       </motion.div>
+
       <Movie>
         <Link to="/work/seba">
-          <motion.h2 variants={fade}>Seba - ReactJS, Firebase</motion.h2>
+          <motion.div
+            variants={fade}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <motion.h2 variants={fade}>Seba - ReactJS, Firebase</motion.h2>
+            <GoToWebsite website={"https://seba-45e88.web.app/"} />
+          </motion.div>
           <motion.div variants={lineAnim} className="line"></motion.div>
           <Hide>
             <motion.img variants={photoAnim} src={seba} alt="Seba" />
           </Hide>
+        </Link>
+      </Movie>
+
+      <Movie
+        ref={element9}
+        variants={fade}
+        animate={controls9}
+        initial="hidden"
+      >
+        <Link to="/work/wiiizy">
+          <TitleSt>
+            <h2>
+              Wiiizy - ReactJS, NextJS, MongoDB, Styled Components, Shopify,
+              Vercel
+            </h2>
+            <GoToWebsite website={"https://wiiizy.vercel.app/"} />
+          </TitleSt>
+          <motion.div variants={lineAnim} className="line"></motion.div>
+          <img src={wiiizy} alt="Wiiizy" />
         </Link>
       </Movie>
 
@@ -65,6 +98,7 @@ const OurWork = () => {
           <img src={revive} alt="Revive" />
         </Link>
       </Movie>
+
       <Movie
         ref={element2}
         variants={fade}
@@ -171,6 +205,7 @@ const Work = styled(motion.div)`
     padding: 1rem 0rem;
   }
 `;
+
 const Movie = styled(motion.div)`
   padding-bottom: 10rem;
 
@@ -193,6 +228,12 @@ const Movie = styled(motion.div)`
 `;
 const Hide = styled.div`
   overflow: hidden;
+`;
+
+const TitleSt = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 //Frame Animation
